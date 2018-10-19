@@ -57,13 +57,12 @@
             this.projectsPanel = new System.Windows.Forms.Panel();
             this.portfolioPanel = new System.Windows.Forms.Panel();
             this.createProjectPanel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.newProjectTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.projectNameTextBox = new System.Windows.Forms.TextBox();
             this.projectIDLabel = new System.Windows.Forms.Label();
             this.projectIDTextBox = new System.Windows.Forms.TextBox();
             this.pmLabel = new System.Windows.Forms.Label();
             this.wtgNoTextBox = new System.Windows.Forms.TextBox();
-            this.tocTextBox = new System.Windows.Forms.TextBox();
             this.PMTextBox = new System.Windows.Forms.TextBox();
             this.cpmLabel = new System.Windows.Forms.Label();
             this.CPMTextBox = new System.Windows.Forms.TextBox();
@@ -71,47 +70,55 @@
             this.preparedByLabel = new System.Windows.Forms.Label();
             this.preparedByTextBox = new System.Windows.Forms.TextBox();
             this.TOCLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.wtgTypeTextBox = new System.Windows.Forms.TextBox();
+            this.totalProjectCostsTextBox = new System.Windows.Forms.TextBox();
+            this.totalCostsLabel = new System.Windows.Forms.Label();
+            this.ruCostsTextBox = new System.Windows.Forms.TextBox();
             this.RUcostsLabel = new System.Windows.Forms.Label();
-            this.segmentTextBox = new System.Windows.Forms.TextBox();
+            this.buCostsTextBox = new System.Windows.Forms.TextBox();
             this.BUcostsLabel = new System.Windows.Forms.Label();
             this.BUCurLabel = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.buCurComboBox = new System.Windows.Forms.ComboBox();
+            this.rkCurrencyNameBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new WindowsFormsApp1.DataSet1();
+            this.ruCurComboBox = new System.Windows.Forms.ComboBox();
             this.RUcurLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.ruEurLabel = new System.Windows.Forms.Label();
+            this.buEurLabel = new System.Windows.Forms.Label();
+            this.ruRateTextBox = new System.Windows.Forms.TextBox();
+            this.buRateTextBox = new System.Windows.Forms.TextBox();
             this.projectNameLabel = new System.Windows.Forms.Label();
             this.foundationLabel = new System.Windows.Forms.Label();
             this.preassemblyLabel = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.portComboBox = new System.Windows.Forms.ComboBox();
+            this.rkPreAssemblyHarbourBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.foundationComboBox = new System.Windows.Forms.ComboBox();
+            this.rkFoundationTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.segmentLabel = new System.Windows.Forms.Label();
             this.scopeLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.segmentComboBox = new System.Windows.Forms.ComboBox();
+            this.rkSegmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.scopeComboBox = new System.Windows.Forms.ComboBox();
+            this.rkscopeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.wtgTypeLabel = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.wtgTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.wTGtypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.LoAIDLabel = new System.Windows.Forms.Label();
             this.LoaIDTextBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.projectSpecificDataLabel = new System.Windows.Forms.Label();
+            this.projectPersonalDataLabel = new System.Windows.Forms.Label();
+            this.projectOrderDataLabel = new System.Windows.Forms.Label();
+            this.projectCostsLabel = new System.Windows.Forms.Label();
+            this.scopeLocationLabel = new System.Windows.Forms.Label();
+            this.insertProjectButton = new System.Windows.Forms.Button();
+            this.projectOwnerLabel = new System.Windows.Forms.Label();
+            this.projectOwnerComboBox = new System.Windows.Forms.ComboBox();
+            this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableauButton = new System.Windows.Forms.Button();
             this.riskContingencyButton = new System.Windows.Forms.Button();
             this.rologButton = new System.Windows.Forms.Button();
             this.top20Button = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.portfolioRepGridView = new System.Windows.Forms.DataGridView();
             this.projectsData = new System.Windows.Forms.DataGridView();
-            this.dataSet1 = new WindowsFormsApp1.DataSet1();
-            this.newprojectviewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.new_project_viewTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.new_project_viewTableAdapter();
             this.pnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.segmentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.scopeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -121,6 +128,21 @@
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDuserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDProjectTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.newprojectviewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.new_project_viewTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.new_project_viewTableAdapter();
+            this.rk_scopeTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.rk_scopeTableAdapter();
+            this.rk_FoundationTypeTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.rk_FoundationTypeTableAdapter();
+            this.rk_PreAssemblyHarbourTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.rk_PreAssemblyHarbourTableAdapter();
+            this.rk_SegmentTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.rk_SegmentTableAdapter();
+            this.wTGtypeTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.WTGtypeTableAdapter();
+            this.rk_CurrencyNameTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.rk_CurrencyNameTableAdapter();
+            this.rkusersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rk_usersTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.rk_usersTableAdapter();
+            this.rkUsersListviewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rk_UsersList_viewTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.rk_UsersList_viewTableAdapter();
+            this.dataSet11 = new WindowsFormsApp1.DataSet1();
+            this.rkUsersListviewBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tocTextBox = new System.Windows.Forms.DateTimePicker();
             this.locationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.readPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.approvalPictureBox)).BeginInit();
@@ -130,11 +152,22 @@
             this.projectsPanel.SuspendLayout();
             this.portfolioPanel.SuspendLayout();
             this.createProjectPanel.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectsData)).BeginInit();
+            this.newProjectTableLayout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rkCurrencyNameBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkPreAssemblyHarbourBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkFoundationTypeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkSegmentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkscopeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wTGtypeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portfolioRepGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectsData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newprojectviewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkusersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkUsersListviewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkUsersListviewBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // locationPanel
@@ -593,10 +626,12 @@
             // 
             // projectsPanel
             // 
+            this.projectsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.projectsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(238)))));
             this.projectsPanel.Controls.Add(this.portfolioPanel);
             this.projectsPanel.Controls.Add(this.projectsData);
-            this.projectsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.projectsPanel.Location = new System.Drawing.Point(275, 41);
             this.projectsPanel.Name = "projectsPanel";
             this.projectsPanel.Size = new System.Drawing.Size(840, 664);
@@ -609,7 +644,7 @@
             this.portfolioPanel.Controls.Add(this.riskContingencyButton);
             this.portfolioPanel.Controls.Add(this.rologButton);
             this.portfolioPanel.Controls.Add(this.top20Button);
-            this.portfolioPanel.Controls.Add(this.dataGridView1);
+            this.portfolioPanel.Controls.Add(this.portfolioRepGridView);
             this.portfolioPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.portfolioPanel.Location = new System.Drawing.Point(0, 0);
             this.portfolioPanel.Name = "portfolioPanel";
@@ -619,110 +654,114 @@
             // 
             // createProjectPanel
             // 
-            this.createProjectPanel.Controls.Add(this.tableLayoutPanel1);
+            this.createProjectPanel.Controls.Add(this.newProjectTableLayout);
             this.createProjectPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.createProjectPanel.Location = new System.Drawing.Point(0, 0);
             this.createProjectPanel.Name = "createProjectPanel";
             this.createProjectPanel.Size = new System.Drawing.Size(840, 664);
             this.createProjectPanel.TabIndex = 5;
             // 
-            // tableLayoutPanel1
+            // newProjectTableLayout
             // 
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(238)))));
-            this.tableLayoutPanel1.ColumnCount = 7;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.469074F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.03613F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.938149F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.03613F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.175157F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.876299F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.469074F));
-            this.tableLayoutPanel1.Controls.Add(this.projectNameTextBox, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.projectIDLabel, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.projectIDTextBox, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.pmLabel, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.wtgNoTextBox, 1, 16);
-            this.tableLayoutPanel1.Controls.Add(this.tocTextBox, 1, 14);
-            this.tableLayoutPanel1.Controls.Add(this.PMTextBox, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.cpmLabel, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.CPMTextBox, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.wtgNoLabel, 1, 15);
-            this.tableLayoutPanel1.Controls.Add(this.preparedByLabel, 1, 10);
-            this.tableLayoutPanel1.Controls.Add(this.preparedByTextBox, 1, 11);
-            this.tableLayoutPanel1.Controls.Add(this.TOCLabel, 1, 13);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 28);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 27);
-            this.tableLayoutPanel1.Controls.Add(this.wtgTypeTextBox, 1, 26);
-            this.tableLayoutPanel1.Controls.Add(this.RUcostsLabel, 1, 25);
-            this.tableLayoutPanel1.Controls.Add(this.segmentTextBox, 1, 22);
-            this.tableLayoutPanel1.Controls.Add(this.BUcostsLabel, 1, 21);
-            this.tableLayoutPanel1.Controls.Add(this.BUCurLabel, 3, 21);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox6, 3, 22);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox7, 3, 26);
-            this.tableLayoutPanel1.Controls.Add(this.RUcurLabel, 3, 25);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 4, 26);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 4, 22);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 5, 26);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 5, 22);
-            this.tableLayoutPanel1.Controls.Add(this.projectNameLabel, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.foundationLabel, 3, 8);
-            this.tableLayoutPanel1.Controls.Add(this.preassemblyLabel, 3, 10);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox3, 3, 11);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox4, 3, 9);
-            this.tableLayoutPanel1.Controls.Add(this.segmentLabel, 3, 13);
-            this.tableLayoutPanel1.Controls.Add(this.scopeLabel, 3, 6);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 3, 14);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox5, 3, 7);
-            this.tableLayoutPanel1.Controls.Add(this.wtgTypeLabel, 3, 15);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox2, 3, 16);
-            this.tableLayoutPanel1.Controls.Add(this.LoAIDLabel, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.LoaIDTextBox, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 1, 12);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 1, 17);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 3, 5);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 31;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(840, 664);
-            this.tableLayoutPanel1.TabIndex = 42;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.newProjectTableLayout.AutoSize = true;
+            this.newProjectTableLayout.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.newProjectTableLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(232)))), ((int)(((byte)(238)))));
+            this.newProjectTableLayout.ColumnCount = 7;
+            this.newProjectTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.469074F));
+            this.newProjectTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.03613F));
+            this.newProjectTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.938149F));
+            this.newProjectTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.03613F));
+            this.newProjectTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.175157F));
+            this.newProjectTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.876299F));
+            this.newProjectTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.469074F));
+            this.newProjectTableLayout.Controls.Add(this.projectNameTextBox, 1, 2);
+            this.newProjectTableLayout.Controls.Add(this.projectIDLabel, 1, 3);
+            this.newProjectTableLayout.Controls.Add(this.projectIDTextBox, 1, 4);
+            this.newProjectTableLayout.Controls.Add(this.pmLabel, 1, 6);
+            this.newProjectTableLayout.Controls.Add(this.wtgNoTextBox, 1, 16);
+            this.newProjectTableLayout.Controls.Add(this.PMTextBox, 1, 7);
+            this.newProjectTableLayout.Controls.Add(this.cpmLabel, 1, 8);
+            this.newProjectTableLayout.Controls.Add(this.CPMTextBox, 1, 9);
+            this.newProjectTableLayout.Controls.Add(this.wtgNoLabel, 1, 15);
+            this.newProjectTableLayout.Controls.Add(this.preparedByLabel, 1, 10);
+            this.newProjectTableLayout.Controls.Add(this.preparedByTextBox, 1, 11);
+            this.newProjectTableLayout.Controls.Add(this.TOCLabel, 1, 13);
+            this.newProjectTableLayout.Controls.Add(this.totalProjectCostsTextBox, 1, 28);
+            this.newProjectTableLayout.Controls.Add(this.totalCostsLabel, 1, 27);
+            this.newProjectTableLayout.Controls.Add(this.ruCostsTextBox, 1, 26);
+            this.newProjectTableLayout.Controls.Add(this.RUcostsLabel, 1, 25);
+            this.newProjectTableLayout.Controls.Add(this.buCostsTextBox, 1, 22);
+            this.newProjectTableLayout.Controls.Add(this.BUcostsLabel, 1, 21);
+            this.newProjectTableLayout.Controls.Add(this.BUCurLabel, 3, 21);
+            this.newProjectTableLayout.Controls.Add(this.buCurComboBox, 3, 22);
+            this.newProjectTableLayout.Controls.Add(this.ruCurComboBox, 3, 26);
+            this.newProjectTableLayout.Controls.Add(this.RUcurLabel, 3, 25);
+            this.newProjectTableLayout.Controls.Add(this.ruEurLabel, 4, 26);
+            this.newProjectTableLayout.Controls.Add(this.buEurLabel, 4, 22);
+            this.newProjectTableLayout.Controls.Add(this.ruRateTextBox, 5, 26);
+            this.newProjectTableLayout.Controls.Add(this.buRateTextBox, 5, 22);
+            this.newProjectTableLayout.Controls.Add(this.projectNameLabel, 1, 1);
+            this.newProjectTableLayout.Controls.Add(this.foundationLabel, 3, 8);
+            this.newProjectTableLayout.Controls.Add(this.preassemblyLabel, 3, 10);
+            this.newProjectTableLayout.Controls.Add(this.portComboBox, 3, 11);
+            this.newProjectTableLayout.Controls.Add(this.foundationComboBox, 3, 9);
+            this.newProjectTableLayout.Controls.Add(this.segmentLabel, 3, 13);
+            this.newProjectTableLayout.Controls.Add(this.scopeLabel, 3, 6);
+            this.newProjectTableLayout.Controls.Add(this.segmentComboBox, 3, 14);
+            this.newProjectTableLayout.Controls.Add(this.scopeComboBox, 3, 7);
+            this.newProjectTableLayout.Controls.Add(this.wtgTypeLabel, 3, 15);
+            this.newProjectTableLayout.Controls.Add(this.wtgTypeComboBox, 3, 16);
+            this.newProjectTableLayout.Controls.Add(this.LoAIDLabel, 3, 3);
+            this.newProjectTableLayout.Controls.Add(this.LoaIDTextBox, 3, 4);
+            this.newProjectTableLayout.Controls.Add(this.projectSpecificDataLabel, 1, 0);
+            this.newProjectTableLayout.Controls.Add(this.projectPersonalDataLabel, 1, 5);
+            this.newProjectTableLayout.Controls.Add(this.projectOrderDataLabel, 1, 12);
+            this.newProjectTableLayout.Controls.Add(this.projectCostsLabel, 1, 17);
+            this.newProjectTableLayout.Controls.Add(this.scopeLocationLabel, 3, 5);
+            this.newProjectTableLayout.Controls.Add(this.insertProjectButton, 5, 30);
+            this.newProjectTableLayout.Controls.Add(this.projectOwnerLabel, 3, 1);
+            this.newProjectTableLayout.Controls.Add(this.projectOwnerComboBox, 3, 2);
+            this.newProjectTableLayout.Controls.Add(this.tocTextBox, 1, 14);
+            this.newProjectTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.newProjectTableLayout.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.newProjectTableLayout.Location = new System.Drawing.Point(0, 0);
+            this.newProjectTableLayout.Name = "newProjectTableLayout";
+            this.newProjectTableLayout.RowCount = 32;
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.newProjectTableLayout.Size = new System.Drawing.Size(840, 664);
+            this.newProjectTableLayout.TabIndex = 42;
+            this.newProjectTableLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // projectNameTextBox
             // 
@@ -731,13 +770,13 @@
             this.projectNameTextBox.Location = new System.Drawing.Point(23, 48);
             this.projectNameTextBox.Multiline = true;
             this.projectNameTextBox.Name = "projectNameTextBox";
-            this.projectNameTextBox.Size = new System.Drawing.Size(305, 21);
+            this.projectNameTextBox.Size = new System.Drawing.Size(305, 23);
             this.projectNameTextBox.TabIndex = 18;
             // 
             // projectIDLabel
             // 
             this.projectIDLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.projectIDLabel.Location = new System.Drawing.Point(23, 72);
+            this.projectIDLabel.Location = new System.Drawing.Point(23, 74);
             this.projectIDLabel.Name = "projectIDLabel";
             this.projectIDLabel.Size = new System.Drawing.Size(130, 15);
             this.projectIDLabel.TabIndex = 1;
@@ -748,16 +787,16 @@
             // 
             this.projectIDTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.projectIDTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.projectIDTextBox.Location = new System.Drawing.Point(23, 90);
+            this.projectIDTextBox.Location = new System.Drawing.Point(23, 92);
             this.projectIDTextBox.Multiline = true;
             this.projectIDTextBox.Name = "projectIDTextBox";
             this.projectIDTextBox.Size = new System.Drawing.Size(305, 21);
-            this.projectIDTextBox.TabIndex = 19;
+            this.projectIDTextBox.TabIndex = 20;
             // 
             // pmLabel
             // 
             this.pmLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pmLabel.Location = new System.Drawing.Point(23, 144);
+            this.pmLabel.Location = new System.Drawing.Point(23, 146);
             this.pmLabel.Name = "pmLabel";
             this.pmLabel.Size = new System.Drawing.Size(130, 15);
             this.pmLabel.TabIndex = 4;
@@ -768,27 +807,17 @@
             // 
             this.wtgNoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.wtgNoTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.wtgNoTextBox.Location = new System.Drawing.Point(23, 372);
+            this.wtgNoTextBox.Location = new System.Drawing.Point(23, 374);
             this.wtgNoTextBox.Multiline = true;
             this.wtgNoTextBox.Name = "wtgNoTextBox";
             this.wtgNoTextBox.Size = new System.Drawing.Size(305, 24);
-            this.wtgNoTextBox.TabIndex = 27;
-            // 
-            // tocTextBox
-            // 
-            this.tocTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tocTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tocTextBox.Location = new System.Drawing.Point(23, 327);
-            this.tocTextBox.Multiline = true;
-            this.tocTextBox.Name = "tocTextBox";
-            this.tocTextBox.Size = new System.Drawing.Size(305, 24);
-            this.tocTextBox.TabIndex = 24;
+            this.wtgNoTextBox.TabIndex = 30;
             // 
             // PMTextBox
             // 
             this.PMTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PMTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.PMTextBox.Location = new System.Drawing.Point(23, 162);
+            this.PMTextBox.Location = new System.Drawing.Point(23, 164);
             this.PMTextBox.Multiline = true;
             this.PMTextBox.Name = "PMTextBox";
             this.PMTextBox.Size = new System.Drawing.Size(305, 24);
@@ -797,7 +826,7 @@
             // cpmLabel
             // 
             this.cpmLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.cpmLabel.Location = new System.Drawing.Point(23, 189);
+            this.cpmLabel.Location = new System.Drawing.Point(23, 191);
             this.cpmLabel.Name = "cpmLabel";
             this.cpmLabel.Size = new System.Drawing.Size(186, 15);
             this.cpmLabel.TabIndex = 3;
@@ -808,16 +837,16 @@
             // 
             this.CPMTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CPMTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CPMTextBox.Location = new System.Drawing.Point(23, 207);
+            this.CPMTextBox.Location = new System.Drawing.Point(23, 209);
             this.CPMTextBox.Multiline = true;
             this.CPMTextBox.Name = "CPMTextBox";
             this.CPMTextBox.Size = new System.Drawing.Size(305, 24);
-            this.CPMTextBox.TabIndex = 21;
+            this.CPMTextBox.TabIndex = 23;
             // 
             // wtgNoLabel
             // 
             this.wtgNoLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.wtgNoLabel.Location = new System.Drawing.Point(23, 354);
+            this.wtgNoLabel.Location = new System.Drawing.Point(23, 356);
             this.wtgNoLabel.Name = "wtgNoLabel";
             this.wtgNoLabel.Size = new System.Drawing.Size(130, 15);
             this.wtgNoLabel.TabIndex = 9;
@@ -827,7 +856,7 @@
             // preparedByLabel
             // 
             this.preparedByLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.preparedByLabel.Location = new System.Drawing.Point(23, 234);
+            this.preparedByLabel.Location = new System.Drawing.Point(23, 236);
             this.preparedByLabel.Name = "preparedByLabel";
             this.preparedByLabel.Size = new System.Drawing.Size(130, 15);
             this.preparedByLabel.TabIndex = 5;
@@ -838,76 +867,77 @@
             // 
             this.preparedByTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.preparedByTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.preparedByTextBox.Location = new System.Drawing.Point(23, 252);
+            this.preparedByTextBox.Location = new System.Drawing.Point(23, 254);
             this.preparedByTextBox.Multiline = true;
             this.preparedByTextBox.Name = "preparedByTextBox";
             this.preparedByTextBox.Size = new System.Drawing.Size(305, 24);
-            this.preparedByTextBox.TabIndex = 23;
+            this.preparedByTextBox.TabIndex = 24;
             // 
             // TOCLabel
             // 
             this.TOCLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TOCLabel.Location = new System.Drawing.Point(23, 309);
+            this.TOCLabel.Location = new System.Drawing.Point(23, 311);
             this.TOCLabel.Name = "TOCLabel";
             this.TOCLabel.Size = new System.Drawing.Size(130, 15);
             this.TOCLabel.TabIndex = 6;
             this.TOCLabel.Text = "TOC Date";
             this.TOCLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox1
+            // totalProjectCostsTextBox
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(23, 537);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(305, 21);
-            this.textBox1.TabIndex = 28;
+            this.totalProjectCostsTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.totalProjectCostsTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.totalProjectCostsTextBox.Location = new System.Drawing.Point(23, 539);
+            this.totalProjectCostsTextBox.Multiline = true;
+            this.totalProjectCostsTextBox.Name = "totalProjectCostsTextBox";
+            this.totalProjectCostsTextBox.ReadOnly = true;
+            this.totalProjectCostsTextBox.Size = new System.Drawing.Size(305, 21);
+            this.totalProjectCostsTextBox.TabIndex = 38;
             // 
-            // label1
+            // totalCostsLabel
             // 
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(23, 519);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 15);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Total Project costs";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.totalCostsLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.totalCostsLabel.Location = new System.Drawing.Point(23, 521);
+            this.totalCostsLabel.Name = "totalCostsLabel";
+            this.totalCostsLabel.Size = new System.Drawing.Size(130, 15);
+            this.totalCostsLabel.TabIndex = 15;
+            this.totalCostsLabel.Text = "Total Project costs";
+            this.totalCostsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // wtgTypeTextBox
+            // ruCostsTextBox
             // 
-            this.wtgTypeTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wtgTypeTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.wtgTypeTextBox.Location = new System.Drawing.Point(23, 492);
-            this.wtgTypeTextBox.Multiline = true;
-            this.wtgTypeTextBox.Name = "wtgTypeTextBox";
-            this.wtgTypeTextBox.Size = new System.Drawing.Size(305, 24);
-            this.wtgTypeTextBox.TabIndex = 26;
+            this.ruCostsTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ruCostsTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ruCostsTextBox.Location = new System.Drawing.Point(23, 494);
+            this.ruCostsTextBox.Multiline = true;
+            this.ruCostsTextBox.Name = "ruCostsTextBox";
+            this.ruCostsTextBox.Size = new System.Drawing.Size(305, 24);
+            this.ruCostsTextBox.TabIndex = 35;
             // 
             // RUcostsLabel
             // 
             this.RUcostsLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.RUcostsLabel.Location = new System.Drawing.Point(23, 474);
+            this.RUcostsLabel.Location = new System.Drawing.Point(23, 476);
             this.RUcostsLabel.Name = "RUcostsLabel";
             this.RUcostsLabel.Size = new System.Drawing.Size(130, 15);
             this.RUcostsLabel.TabIndex = 14;
             this.RUcostsLabel.Text = "Projects costs RU";
             this.RUcostsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // segmentTextBox
+            // buCostsTextBox
             // 
-            this.segmentTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.segmentTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.segmentTextBox.Location = new System.Drawing.Point(23, 447);
-            this.segmentTextBox.Multiline = true;
-            this.segmentTextBox.Name = "segmentTextBox";
-            this.segmentTextBox.Size = new System.Drawing.Size(305, 24);
-            this.segmentTextBox.TabIndex = 25;
+            this.buCostsTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buCostsTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buCostsTextBox.Location = new System.Drawing.Point(23, 449);
+            this.buCostsTextBox.Multiline = true;
+            this.buCostsTextBox.Name = "buCostsTextBox";
+            this.buCostsTextBox.Size = new System.Drawing.Size(305, 24);
+            this.buCostsTextBox.TabIndex = 32;
             // 
             // BUcostsLabel
             // 
             this.BUcostsLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.BUcostsLabel.Location = new System.Drawing.Point(23, 429);
+            this.BUcostsLabel.Location = new System.Drawing.Point(23, 431);
             this.BUcostsLabel.Name = "BUcostsLabel";
             this.BUcostsLabel.Size = new System.Drawing.Size(130, 15);
             this.BUcostsLabel.TabIndex = 13;
@@ -917,82 +947,98 @@
             // BUCurLabel
             // 
             this.BUCurLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.BUCurLabel.Location = new System.Drawing.Point(375, 429);
+            this.BUCurLabel.Location = new System.Drawing.Point(375, 431);
             this.BUCurLabel.Name = "BUCurLabel";
             this.BUCurLabel.Size = new System.Drawing.Size(130, 15);
             this.BUCurLabel.TabIndex = 16;
             this.BUCurLabel.Text = "BU currency";
             this.BUCurLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox6
+            // buCurComboBox
             // 
-            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(375, 447);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(305, 24);
-            this.comboBox6.TabIndex = 36;
+            this.buCurComboBox.DataSource = this.rkCurrencyNameBindingSource;
+            this.buCurComboBox.DisplayMember = "Code";
+            this.buCurComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buCurComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buCurComboBox.FormattingEnabled = true;
+            this.buCurComboBox.Location = new System.Drawing.Point(375, 449);
+            this.buCurComboBox.Name = "buCurComboBox";
+            this.buCurComboBox.Size = new System.Drawing.Size(305, 24);
+            this.buCurComboBox.TabIndex = 33;
+            this.buCurComboBox.ValueMember = "ID";
             // 
-            // comboBox7
+            // rkCurrencyNameBindingSource
             // 
-            this.comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(375, 492);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(305, 24);
-            this.comboBox7.TabIndex = 37;
+            this.rkCurrencyNameBindingSource.DataMember = "rk_CurrencyName";
+            this.rkCurrencyNameBindingSource.DataSource = this.dataSet1;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "projectDataSet";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ruCurComboBox
+            // 
+            this.ruCurComboBox.DataSource = this.rkCurrencyNameBindingSource;
+            this.ruCurComboBox.DisplayMember = "Code";
+            this.ruCurComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ruCurComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ruCurComboBox.FormattingEnabled = true;
+            this.ruCurComboBox.Location = new System.Drawing.Point(375, 494);
+            this.ruCurComboBox.Name = "ruCurComboBox";
+            this.ruCurComboBox.Size = new System.Drawing.Size(305, 24);
+            this.ruCurComboBox.TabIndex = 36;
+            this.ruCurComboBox.ValueMember = "ID";
             // 
             // RUcurLabel
             // 
             this.RUcurLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.RUcurLabel.Location = new System.Drawing.Point(375, 474);
+            this.RUcurLabel.Location = new System.Drawing.Point(375, 476);
             this.RUcurLabel.Name = "RUcurLabel";
             this.RUcurLabel.Size = new System.Drawing.Size(130, 15);
             this.RUcurLabel.TabIndex = 17;
             this.RUcurLabel.Text = "RU currency";
             this.RUcurLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label2
+            // ruEurLabel
             // 
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(686, 489);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 21);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "/EUR";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ruEurLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ruEurLabel.Location = new System.Drawing.Point(686, 491);
+            this.ruEurLabel.Name = "ruEurLabel";
+            this.ruEurLabel.Size = new System.Drawing.Size(40, 21);
+            this.ruEurLabel.TabIndex = 38;
+            this.ruEurLabel.Text = "/EUR";
+            this.ruEurLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // buEurLabel
             // 
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(686, 444);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 21);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "/EUR";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buEurLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buEurLabel.Location = new System.Drawing.Point(686, 446);
+            this.buEurLabel.Name = "buEurLabel";
+            this.buEurLabel.Size = new System.Drawing.Size(40, 21);
+            this.buEurLabel.TabIndex = 39;
+            this.buEurLabel.Text = "/EUR";
+            this.buEurLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox2
+            // ruRateTextBox
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(737, 492);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 24);
-            this.textBox2.TabIndex = 40;
+            this.ruRateTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ruRateTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ruRateTextBox.Location = new System.Drawing.Point(737, 494);
+            this.ruRateTextBox.Multiline = true;
+            this.ruRateTextBox.Name = "ruRateTextBox";
+            this.ruRateTextBox.Size = new System.Drawing.Size(76, 24);
+            this.ruRateTextBox.TabIndex = 37;
             // 
-            // textBox3
+            // buRateTextBox
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox3.Location = new System.Drawing.Point(737, 447);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 24);
-            this.textBox3.TabIndex = 41;
+            this.buRateTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buRateTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buRateTextBox.Location = new System.Drawing.Point(737, 449);
+            this.buRateTextBox.Multiline = true;
+            this.buRateTextBox.Name = "buRateTextBox";
+            this.buRateTextBox.Size = new System.Drawing.Size(76, 24);
+            this.buRateTextBox.TabIndex = 34;
             // 
             // projectNameLabel
             // 
@@ -1007,7 +1053,7 @@
             // foundationLabel
             // 
             this.foundationLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.foundationLabel.Location = new System.Drawing.Point(375, 189);
+            this.foundationLabel.Location = new System.Drawing.Point(375, 191);
             this.foundationLabel.Name = "foundationLabel";
             this.foundationLabel.Size = new System.Drawing.Size(130, 15);
             this.foundationLabel.TabIndex = 11;
@@ -1017,37 +1063,54 @@
             // preassemblyLabel
             // 
             this.preassemblyLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.preassemblyLabel.Location = new System.Drawing.Point(375, 234);
+            this.preassemblyLabel.Location = new System.Drawing.Point(375, 236);
             this.preassemblyLabel.Name = "preassemblyLabel";
             this.preassemblyLabel.Size = new System.Drawing.Size(130, 15);
             this.preassemblyLabel.TabIndex = 12;
             this.preassemblyLabel.Text = "Port of Pre-assembly";
             this.preassemblyLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox3
+            // portComboBox
             // 
-            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(375, 252);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(305, 24);
-            this.comboBox3.TabIndex = 33;
+            this.portComboBox.DataSource = this.rkPreAssemblyHarbourBindingSource;
+            this.portComboBox.DisplayMember = "Code";
+            this.portComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.portComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.portComboBox.FormattingEnabled = true;
+            this.portComboBox.Location = new System.Drawing.Point(375, 254);
+            this.portComboBox.Name = "portComboBox";
+            this.portComboBox.Size = new System.Drawing.Size(305, 24);
+            this.portComboBox.TabIndex = 27;
+            this.portComboBox.ValueMember = "ID";
             // 
-            // comboBox4
+            // rkPreAssemblyHarbourBindingSource
             // 
-            this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(375, 207);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(305, 24);
-            this.comboBox4.TabIndex = 34;
+            this.rkPreAssemblyHarbourBindingSource.DataMember = "rk_PreAssemblyHarbour";
+            this.rkPreAssemblyHarbourBindingSource.DataSource = this.dataSet1;
+            // 
+            // foundationComboBox
+            // 
+            this.foundationComboBox.DataSource = this.rkFoundationTypeBindingSource;
+            this.foundationComboBox.DisplayMember = "Code";
+            this.foundationComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.foundationComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.foundationComboBox.FormattingEnabled = true;
+            this.foundationComboBox.Location = new System.Drawing.Point(375, 209);
+            this.foundationComboBox.Name = "foundationComboBox";
+            this.foundationComboBox.Size = new System.Drawing.Size(305, 24);
+            this.foundationComboBox.TabIndex = 26;
+            this.foundationComboBox.ValueMember = "ID";
+            this.foundationComboBox.SelectedIndexChanged += new System.EventHandler(this.foundationComboBox_SelectedIndexChanged);
+            // 
+            // rkFoundationTypeBindingSource
+            // 
+            this.rkFoundationTypeBindingSource.DataMember = "rk_FoundationType";
+            this.rkFoundationTypeBindingSource.DataSource = this.dataSet1;
             // 
             // segmentLabel
             // 
             this.segmentLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.segmentLabel.Location = new System.Drawing.Point(375, 309);
+            this.segmentLabel.Location = new System.Drawing.Point(375, 311);
             this.segmentLabel.Name = "segmentLabel";
             this.segmentLabel.Size = new System.Drawing.Size(130, 15);
             this.segmentLabel.TabIndex = 7;
@@ -1057,57 +1120,81 @@
             // scopeLabel
             // 
             this.scopeLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.scopeLabel.Location = new System.Drawing.Point(375, 144);
+            this.scopeLabel.Location = new System.Drawing.Point(375, 146);
             this.scopeLabel.Name = "scopeLabel";
             this.scopeLabel.Size = new System.Drawing.Size(130, 15);
             this.scopeLabel.TabIndex = 10;
             this.scopeLabel.Text = "Scope";
             this.scopeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox1
+            // segmentComboBox
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(375, 327);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(305, 24);
-            this.comboBox1.TabIndex = 31;
+            this.segmentComboBox.DataSource = this.rkSegmentBindingSource;
+            this.segmentComboBox.DisplayMember = "Segment";
+            this.segmentComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.segmentComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.segmentComboBox.FormattingEnabled = true;
+            this.segmentComboBox.Location = new System.Drawing.Point(375, 329);
+            this.segmentComboBox.Name = "segmentComboBox";
+            this.segmentComboBox.Size = new System.Drawing.Size(305, 24);
+            this.segmentComboBox.TabIndex = 29;
+            this.segmentComboBox.ValueMember = "ID";
             // 
-            // comboBox5
+            // rkSegmentBindingSource
             // 
-            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(375, 162);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(305, 24);
-            this.comboBox5.TabIndex = 35;
+            this.rkSegmentBindingSource.DataMember = "rk_Segment";
+            this.rkSegmentBindingSource.DataSource = this.dataSet1;
+            // 
+            // scopeComboBox
+            // 
+            this.scopeComboBox.DataSource = this.rkscopeBindingSource;
+            this.scopeComboBox.DisplayMember = "scope";
+            this.scopeComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scopeComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.scopeComboBox.FormattingEnabled = true;
+            this.scopeComboBox.Location = new System.Drawing.Point(375, 164);
+            this.scopeComboBox.Name = "scopeComboBox";
+            this.scopeComboBox.Size = new System.Drawing.Size(305, 24);
+            this.scopeComboBox.TabIndex = 25;
+            this.scopeComboBox.ValueMember = "ID";
+            // 
+            // rkscopeBindingSource
+            // 
+            this.rkscopeBindingSource.DataMember = "rk_scope";
+            this.rkscopeBindingSource.DataSource = this.dataSet1;
             // 
             // wtgTypeLabel
             // 
             this.wtgTypeLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.wtgTypeLabel.Location = new System.Drawing.Point(375, 354);
+            this.wtgTypeLabel.Location = new System.Drawing.Point(375, 356);
             this.wtgTypeLabel.Name = "wtgTypeLabel";
             this.wtgTypeLabel.Size = new System.Drawing.Size(130, 15);
             this.wtgTypeLabel.TabIndex = 8;
             this.wtgTypeLabel.Text = "Type of WTG";
             this.wtgTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox2
+            // wtgTypeComboBox
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(375, 372);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(305, 24);
-            this.comboBox2.TabIndex = 32;
+            this.wtgTypeComboBox.DataSource = this.wTGtypeBindingSource;
+            this.wtgTypeComboBox.DisplayMember = "Name";
+            this.wtgTypeComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wtgTypeComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.wtgTypeComboBox.FormattingEnabled = true;
+            this.wtgTypeComboBox.Location = new System.Drawing.Point(375, 374);
+            this.wtgTypeComboBox.Name = "wtgTypeComboBox";
+            this.wtgTypeComboBox.Size = new System.Drawing.Size(305, 24);
+            this.wtgTypeComboBox.TabIndex = 31;
+            this.wtgTypeComboBox.ValueMember = "ID";
+            // 
+            // wTGtypeBindingSource
+            // 
+            this.wTGtypeBindingSource.DataMember = "WTGtype";
+            this.wTGtypeBindingSource.DataSource = this.dataSet1;
             // 
             // LoAIDLabel
             // 
             this.LoAIDLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LoAIDLabel.Location = new System.Drawing.Point(375, 72);
+            this.LoAIDLabel.Location = new System.Drawing.Point(375, 74);
             this.LoAIDLabel.Name = "LoAIDLabel";
             this.LoAIDLabel.Size = new System.Drawing.Size(130, 15);
             this.LoAIDLabel.TabIndex = 2;
@@ -1118,71 +1205,111 @@
             // 
             this.LoaIDTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LoaIDTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LoaIDTextBox.Location = new System.Drawing.Point(375, 90);
+            this.LoaIDTextBox.Location = new System.Drawing.Point(375, 92);
             this.LoaIDTextBox.Multiline = true;
             this.LoaIDTextBox.Name = "LoaIDTextBox";
             this.LoaIDTextBox.Size = new System.Drawing.Size(305, 21);
-            this.LoaIDTextBox.TabIndex = 20;
+            this.LoaIDTextBox.TabIndex = 21;
             // 
-            // label4
+            // projectSpecificDataLabel
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label4.Location = new System.Drawing.Point(23, 7);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 15);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "Project Specific Data";
+            this.projectSpecificDataLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.projectSpecificDataLabel.AutoSize = true;
+            this.projectSpecificDataLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.projectSpecificDataLabel.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.projectSpecificDataLabel.Location = new System.Drawing.Point(23, 7);
+            this.projectSpecificDataLabel.Name = "projectSpecificDataLabel";
+            this.projectSpecificDataLabel.Size = new System.Drawing.Size(119, 15);
+            this.projectSpecificDataLabel.TabIndex = 42;
+            this.projectSpecificDataLabel.Text = "Project Specific Data";
             // 
-            // label5
+            // projectPersonalDataLabel
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label5.Location = new System.Drawing.Point(23, 121);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 15);
-            this.label5.TabIndex = 43;
-            this.label5.Text = "Project Personal Data";
+            this.projectPersonalDataLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.projectPersonalDataLabel.AutoSize = true;
+            this.projectPersonalDataLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.projectPersonalDataLabel.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.projectPersonalDataLabel.Location = new System.Drawing.Point(23, 123);
+            this.projectPersonalDataLabel.Name = "projectPersonalDataLabel";
+            this.projectPersonalDataLabel.Size = new System.Drawing.Size(123, 15);
+            this.projectPersonalDataLabel.TabIndex = 43;
+            this.projectPersonalDataLabel.Text = "Project Personal Data";
             // 
-            // label6
+            // projectOrderDataLabel
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label6.Location = new System.Drawing.Point(23, 286);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 15);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "Project Order Data";
+            this.projectOrderDataLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.projectOrderDataLabel.AutoSize = true;
+            this.projectOrderDataLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.projectOrderDataLabel.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.projectOrderDataLabel.Location = new System.Drawing.Point(23, 288);
+            this.projectOrderDataLabel.Name = "projectOrderDataLabel";
+            this.projectOrderDataLabel.Size = new System.Drawing.Size(107, 15);
+            this.projectOrderDataLabel.TabIndex = 44;
+            this.projectOrderDataLabel.Text = "Project Order Data";
             // 
-            // label7
+            // projectCostsLabel
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label7.Location = new System.Drawing.Point(23, 406);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 15);
-            this.label7.TabIndex = 45;
-            this.label7.Text = "Project Costs";
+            this.projectCostsLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.projectCostsLabel.AutoSize = true;
+            this.projectCostsLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.projectCostsLabel.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.projectCostsLabel.Location = new System.Drawing.Point(23, 408);
+            this.projectCostsLabel.Name = "projectCostsLabel";
+            this.projectCostsLabel.Size = new System.Drawing.Size(76, 15);
+            this.projectCostsLabel.TabIndex = 45;
+            this.projectCostsLabel.Text = "Project Costs";
             // 
-            // label8
+            // scopeLocationLabel
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label8.Location = new System.Drawing.Point(375, 121);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(100, 15);
-            this.label8.TabIndex = 46;
-            this.label8.Text = "Scope && Location";
+            this.scopeLocationLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.scopeLocationLabel.AutoSize = true;
+            this.scopeLocationLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.scopeLocationLabel.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.scopeLocationLabel.Location = new System.Drawing.Point(375, 123);
+            this.scopeLocationLabel.Name = "scopeLocationLabel";
+            this.scopeLocationLabel.Size = new System.Drawing.Size(100, 15);
+            this.scopeLocationLabel.TabIndex = 46;
+            this.scopeLocationLabel.Text = "Scope && Location";
+            // 
+            // insertProjectButton
+            // 
+            this.insertProjectButton.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.insertProjectButton.Location = new System.Drawing.Point(737, 566);
+            this.insertProjectButton.Name = "insertProjectButton";
+            this.insertProjectButton.Size = new System.Drawing.Size(76, 62);
+            this.insertProjectButton.TabIndex = 47;
+            this.insertProjectButton.Text = "GO!";
+            this.insertProjectButton.UseVisualStyleBackColor = true;
+            this.insertProjectButton.Click += new System.EventHandler(this.insertProjectButton_Click);
+            // 
+            // projectOwnerLabel
+            // 
+            this.projectOwnerLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.projectOwnerLabel.Location = new System.Drawing.Point(375, 30);
+            this.projectOwnerLabel.Name = "projectOwnerLabel";
+            this.projectOwnerLabel.Size = new System.Drawing.Size(130, 15);
+            this.projectOwnerLabel.TabIndex = 48;
+            this.projectOwnerLabel.Text = "Project Owner";
+            this.projectOwnerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // projectOwnerComboBox
+            // 
+            this.projectOwnerComboBox.DataSource = this.rkUsersListviewBindingSource1;
+            this.projectOwnerComboBox.DisplayMember = "LastName";
+            this.projectOwnerComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.projectOwnerComboBox.FormattingEnabled = true;
+            this.projectOwnerComboBox.Location = new System.Drawing.Point(375, 48);
+            this.projectOwnerComboBox.Name = "projectOwnerComboBox";
+            this.projectOwnerComboBox.Size = new System.Drawing.Size(305, 23);
+            this.projectOwnerComboBox.TabIndex = 19;
+            this.projectOwnerComboBox.ValueMember = "ID";
+            // 
+            // dataSet1BindingSource
+            // 
+            this.dataSet1BindingSource.DataSource = this.dataSet1;
+            this.dataSet1BindingSource.Position = 0;
             // 
             // tableauButton
             // 
@@ -1228,22 +1355,25 @@
             this.top20Button.Text = "Top 20 Report";
             this.top20Button.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // portfolioRepGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.portfolioRepGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(825, 609);
-            this.dataGridView1.TabIndex = 0;
+            this.portfolioRepGridView.BackgroundColor = System.Drawing.Color.White;
+            this.portfolioRepGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.portfolioRepGridView.Location = new System.Drawing.Point(6, 6);
+            this.portfolioRepGridView.Name = "portfolioRepGridView";
+            this.portfolioRepGridView.Size = new System.Drawing.Size(825, 609);
+            this.portfolioRepGridView.TabIndex = 0;
             // 
             // projectsData
             // 
             this.projectsData.AllowUserToAddRows = false;
             this.projectsData.AllowUserToDeleteRows = false;
+            this.projectsData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.projectsData.AutoGenerateColumns = false;
             this.projectsData.BackgroundColor = System.Drawing.Color.White;
             this.projectsData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1262,20 +1392,6 @@
             this.projectsData.Name = "projectsData";
             this.projectsData.Size = new System.Drawing.Size(825, 650);
             this.projectsData.TabIndex = 0;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // newprojectviewBindingSource
-            // 
-            this.newprojectviewBindingSource.DataMember = "new_project_view";
-            this.newprojectviewBindingSource.DataSource = this.dataSet1;
-            // 
-            // new_project_viewTableAdapter
-            // 
-            this.new_project_viewTableAdapter.ClearBeforeFill = true;
             // 
             // pnameDataGridViewTextBoxColumn
             // 
@@ -1334,6 +1450,75 @@
             this.iDProjectTypeDataGridViewTextBoxColumn.HeaderText = "IDProjectType";
             this.iDProjectTypeDataGridViewTextBoxColumn.Name = "iDProjectTypeDataGridViewTextBoxColumn";
             // 
+            // newprojectviewBindingSource
+            // 
+            this.newprojectviewBindingSource.DataMember = "new_project_view";
+            this.newprojectviewBindingSource.DataSource = this.dataSet1;
+            // 
+            // new_project_viewTableAdapter
+            // 
+            this.new_project_viewTableAdapter.ClearBeforeFill = true;
+            // 
+            // rk_scopeTableAdapter
+            // 
+            this.rk_scopeTableAdapter.ClearBeforeFill = true;
+            // 
+            // rk_FoundationTypeTableAdapter
+            // 
+            this.rk_FoundationTypeTableAdapter.ClearBeforeFill = true;
+            // 
+            // rk_PreAssemblyHarbourTableAdapter
+            // 
+            this.rk_PreAssemblyHarbourTableAdapter.ClearBeforeFill = true;
+            // 
+            // rk_SegmentTableAdapter
+            // 
+            this.rk_SegmentTableAdapter.ClearBeforeFill = true;
+            // 
+            // wTGtypeTableAdapter
+            // 
+            this.wTGtypeTableAdapter.ClearBeforeFill = true;
+            // 
+            // rk_CurrencyNameTableAdapter
+            // 
+            this.rk_CurrencyNameTableAdapter.ClearBeforeFill = true;
+            // 
+            // rkusersBindingSource
+            // 
+            this.rkusersBindingSource.DataMember = "rk_users";
+            this.rkusersBindingSource.DataSource = this.dataSet1;
+            // 
+            // rk_usersTableAdapter
+            // 
+            this.rk_usersTableAdapter.ClearBeforeFill = true;
+            // 
+            // rkUsersListviewBindingSource
+            // 
+            this.rkUsersListviewBindingSource.DataMember = "rk_UsersList_view";
+            this.rkUsersListviewBindingSource.DataSource = this.dataSet1;
+            // 
+            // rk_UsersList_viewTableAdapter
+            // 
+            this.rk_UsersList_viewTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataSet11
+            // 
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rkUsersListviewBindingSource1
+            // 
+            this.rkUsersListviewBindingSource1.DataMember = "rk_UsersList_view";
+            this.rkUsersListviewBindingSource1.DataSource = this.dataSet1;
+            // 
+            // tocTextBox
+            // 
+            this.tocTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tocTextBox.Location = new System.Drawing.Point(23, 329);
+            this.tocTextBox.Name = "tocTextBox";
+            this.tocTextBox.Size = new System.Drawing.Size(305, 21);
+            this.tocTextBox.TabIndex = 28;
+            // 
             // executionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -1358,12 +1543,23 @@
             this.portfolioPanel.ResumeLayout(false);
             this.createProjectPanel.ResumeLayout(false);
             this.createProjectPanel.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectsData)).EndInit();
+            this.newProjectTableLayout.ResumeLayout(false);
+            this.newProjectTableLayout.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rkCurrencyNameBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkPreAssemblyHarbourBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkFoundationTypeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkSegmentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkscopeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wTGtypeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.portfolioRepGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectsData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newprojectviewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkusersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkUsersListviewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rkUsersListviewBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1384,22 +1580,21 @@
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.DataGridView projectsData;
         private System.Windows.Forms.Panel portfolioPanel;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView portfolioRepGridView;
         private System.Windows.Forms.Button rologButton;
         private System.Windows.Forms.Button top20Button;
         private System.Windows.Forms.Button tableauButton;
         private System.Windows.Forms.Button riskContingencyButton;
         private System.Windows.Forms.Panel createProjectPanel;
         private System.Windows.Forms.Label projectNameLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label totalCostsLabel;
         private System.Windows.Forms.Label RUcostsLabel;
         private System.Windows.Forms.Label BUcostsLabel;
-        private System.Windows.Forms.TextBox wtgTypeTextBox;
-        private System.Windows.Forms.TextBox segmentTextBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TextBox ruCostsTextBox;
+        private System.Windows.Forms.TextBox buCostsTextBox;
+        private System.Windows.Forms.TextBox totalProjectCostsTextBox;
+        private System.Windows.Forms.TableLayoutPanel newProjectTableLayout;
         private System.Windows.Forms.TextBox wtgNoTextBox;
-        private System.Windows.Forms.TextBox tocTextBox;
         private System.Windows.Forms.TextBox preparedByTextBox;
         private System.Windows.Forms.TextBox PMTextBox;
         private System.Windows.Forms.TextBox CPMTextBox;
@@ -1411,31 +1606,31 @@
         private System.Windows.Forms.Label pmLabel;
         private System.Windows.Forms.Label cpmLabel;
         private System.Windows.Forms.Label projectIDLabel;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.Label buEurLabel;
+        private System.Windows.Forms.TextBox buRateTextBox;
+        private System.Windows.Forms.Label ruEurLabel;
+        private System.Windows.Forms.TextBox ruRateTextBox;
+        private System.Windows.Forms.ComboBox ruCurComboBox;
         private System.Windows.Forms.TextBox LoaIDTextBox;
         private System.Windows.Forms.Label segmentLabel;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox buCurComboBox;
+        private System.Windows.Forms.ComboBox segmentComboBox;
         private System.Windows.Forms.Label RUcurLabel;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox scopeComboBox;
         private System.Windows.Forms.Label BUCurLabel;
         private System.Windows.Forms.Label wtgTypeLabel;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox foundationComboBox;
+        private System.Windows.Forms.ComboBox wtgTypeComboBox;
+        private System.Windows.Forms.ComboBox portComboBox;
         private System.Windows.Forms.Label preassemblyLabel;
         private System.Windows.Forms.Label foundationLabel;
         private System.Windows.Forms.Label scopeLabel;
         private System.Windows.Forms.Label LoAIDLabel;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label projectSpecificDataLabel;
+        private System.Windows.Forms.Label projectPersonalDataLabel;
+        private System.Windows.Forms.Label projectOrderDataLabel;
+        private System.Windows.Forms.Label projectCostsLabel;
+        private System.Windows.Forms.Label scopeLocationLabel;
         private System.Windows.Forms.Button transfSalesProjButton;
         private System.Windows.Forms.Button usersButton;
         private System.Windows.Forms.Button ownerButton;
@@ -1461,5 +1656,28 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDuserDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDProjectTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource rkscopeBindingSource;
+        private DataSet1TableAdapters.rk_scopeTableAdapter rk_scopeTableAdapter;
+        private System.Windows.Forms.BindingSource rkFoundationTypeBindingSource;
+        private DataSet1TableAdapters.rk_FoundationTypeTableAdapter rk_FoundationTypeTableAdapter;
+        private System.Windows.Forms.BindingSource rkPreAssemblyHarbourBindingSource;
+        private DataSet1TableAdapters.rk_PreAssemblyHarbourTableAdapter rk_PreAssemblyHarbourTableAdapter;
+        private System.Windows.Forms.BindingSource rkSegmentBindingSource;
+        private DataSet1TableAdapters.rk_SegmentTableAdapter rk_SegmentTableAdapter;
+        private System.Windows.Forms.BindingSource wTGtypeBindingSource;
+        private DataSet1TableAdapters.WTGtypeTableAdapter wTGtypeTableAdapter;
+        private System.Windows.Forms.BindingSource rkCurrencyNameBindingSource;
+        private DataSet1TableAdapters.rk_CurrencyNameTableAdapter rk_CurrencyNameTableAdapter;
+        private System.Windows.Forms.Button insertProjectButton;
+        private System.Windows.Forms.Label projectOwnerLabel;
+        private System.Windows.Forms.ComboBox projectOwnerComboBox;
+        private System.Windows.Forms.BindingSource rkusersBindingSource;
+        private DataSet1TableAdapters.rk_usersTableAdapter rk_usersTableAdapter;
+        private System.Windows.Forms.BindingSource rkUsersListviewBindingSource;
+        private DataSet1TableAdapters.rk_UsersList_viewTableAdapter rk_UsersList_viewTableAdapter;
+        private System.Windows.Forms.BindingSource dataSet1BindingSource;
+        private DataSet1 dataSet11;
+        private System.Windows.Forms.BindingSource rkUsersListviewBindingSource1;
+        private System.Windows.Forms.DateTimePicker tocTextBox;
     }
 }

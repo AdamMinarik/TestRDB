@@ -33,5 +33,15 @@ namespace WindowsFormsApp1
         {
             MessageBox.Show("Available soon!", "Sales Projects", MessageBoxButtons.OK);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void closeMe()
+        {
+            Close();
+        }
     }
 }
