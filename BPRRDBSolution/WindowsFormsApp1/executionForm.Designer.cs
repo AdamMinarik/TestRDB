@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(executionForm));
             this.locationPanel = new System.Windows.Forms.Panel();
             this.readPictureBox = new System.Windows.Forms.PictureBox();
@@ -108,6 +109,18 @@
             this.top20Button = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.projectsData = new System.Windows.Forms.DataGridView();
+            this.dataSet1 = new WindowsFormsApp1.DataSet1();
+            this.newprojectviewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.new_project_viewTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.new_project_viewTableAdapter();
+            this.pnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.segmentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scopeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wtgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.owneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDuserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDProjectTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.locationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.readPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.approvalPictureBox)).BeginInit();
@@ -120,11 +133,13 @@
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectsData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newprojectviewBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // locationPanel
             // 
-            this.locationPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
+            this.locationPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(64)))), ((int)(((byte)(77)))));
             this.locationPanel.Controls.Add(this.readPictureBox);
             this.locationPanel.Controls.Add(this.approvalPictureBox);
             this.locationPanel.Controls.Add(this.writePictureBox);
@@ -246,10 +261,10 @@
             // 
             this.transfSalesProjButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.transfSalesProjButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.transfSalesProjButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(134)))), ((int)(((byte)(134)))));
             this.transfSalesProjButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.transfSalesProjButton.FlatAppearance.BorderSize = 0;
-            this.transfSalesProjButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.transfSalesProjButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.transfSalesProjButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.transfSalesProjButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.transfSalesProjButton.Location = new System.Drawing.Point(-1, 462);
@@ -266,10 +281,10 @@
             // 
             this.usersButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.usersButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.usersButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(134)))), ((int)(((byte)(134)))));
             this.usersButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.usersButton.FlatAppearance.BorderSize = 0;
-            this.usersButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.usersButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.usersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.usersButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.usersButton.Location = new System.Drawing.Point(-1, 432);
@@ -286,10 +301,10 @@
             // 
             this.ownerButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ownerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.ownerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(134)))), ((int)(((byte)(134)))));
             this.ownerButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.ownerButton.FlatAppearance.BorderSize = 0;
-            this.ownerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.ownerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.ownerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ownerButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ownerButton.Location = new System.Drawing.Point(-2, 402);
@@ -306,10 +321,10 @@
             // 
             this.wtgTypeButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.wtgTypeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.wtgTypeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(134)))), ((int)(((byte)(134)))));
             this.wtgTypeButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.wtgTypeButton.FlatAppearance.BorderSize = 0;
-            this.wtgTypeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.wtgTypeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.wtgTypeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wtgTypeButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.wtgTypeButton.Location = new System.Drawing.Point(-2, 372);
@@ -320,17 +335,17 @@
             this.wtgTypeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.wtgTypeButton.UseVisualStyleBackColor = false;
             this.wtgTypeButton.Visible = false;
-            this.wtgTypeButton.Click += new System.EventHandler(this.button7_Click);
+            this.wtgTypeButton.Click += new System.EventHandler(this.wtgTypeButton_Click);
             // 
             // orgUnitButton
             // 
             this.orgUnitButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.orgUnitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.orgUnitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(134)))), ((int)(((byte)(134)))));
             this.orgUnitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.orgUnitButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.orgUnitButton.FlatAppearance.BorderSize = 0;
-            this.orgUnitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.orgUnitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.orgUnitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.orgUnitButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.orgUnitButton.Location = new System.Drawing.Point(-2, 342);
@@ -347,10 +362,10 @@
             // 
             this.projectOwnerButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.projectOwnerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.projectOwnerButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(134)))), ((int)(((byte)(134)))));
             this.projectOwnerButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.projectOwnerButton.FlatAppearance.BorderSize = 0;
-            this.projectOwnerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.projectOwnerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.projectOwnerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.projectOwnerButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.projectOwnerButton.Location = new System.Drawing.Point(-2, 312);
@@ -367,10 +382,10 @@
             // 
             this.nccButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.nccButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.nccButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(134)))), ((int)(((byte)(134)))));
             this.nccButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.nccButton.FlatAppearance.BorderSize = 0;
-            this.nccButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.nccButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.nccButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nccButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.nccButton.Location = new System.Drawing.Point(-2, 282);
@@ -387,10 +402,10 @@
             // 
             this.diCatButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.diCatButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.diCatButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(134)))), ((int)(((byte)(134)))));
             this.diCatButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.diCatButton.FlatAppearance.BorderSize = 0;
-            this.diCatButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.diCatButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.diCatButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.diCatButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.diCatButton.Location = new System.Drawing.Point(-2, 252);
@@ -407,11 +422,11 @@
             // 
             this.entryCurButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.entryCurButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.entryCurButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(134)))), ((int)(((byte)(134)))));
             this.entryCurButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.entryCurButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.entryCurButton.FlatAppearance.BorderSize = 0;
-            this.entryCurButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.entryCurButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.entryCurButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.entryCurButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.entryCurButton.Location = new System.Drawing.Point(-2, 222);
@@ -422,6 +437,7 @@
             this.entryCurButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.entryCurButton.UseVisualStyleBackColor = false;
             this.entryCurButton.Visible = false;
+            this.entryCurButton.Click += new System.EventHandler(this.entryCurButton_Click);
             // 
             // quitButton
             // 
@@ -449,7 +465,7 @@
             this.guideButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.guideButton.FlatAppearance.BorderSize = 0;
             this.guideButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(116)))), ((int)(((byte)(150)))));
-            this.guideButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.guideButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.guideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.guideButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.guideButton.Image = ((System.Drawing.Image)(resources.GetObject("guideButton.Image")));
@@ -461,6 +477,7 @@
             this.guideButton.Text = "         TOOL GUIDE";
             this.guideButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.guideButton.UseVisualStyleBackColor = false;
+            this.guideButton.Click += new System.EventHandler(this.guideButton_Click);
             // 
             // settingsButton
             // 
@@ -470,7 +487,7 @@
             this.settingsButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.settingsButton.FlatAppearance.BorderSize = 0;
             this.settingsButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(116)))), ((int)(((byte)(150)))));
-            this.settingsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.settingsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.settingsButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsButton.Image")));
@@ -492,7 +509,7 @@
             this.editButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.editButton.FlatAppearance.BorderSize = 0;
             this.editButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(116)))), ((int)(((byte)(150)))));
-            this.editButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.editButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.editButton.Image = ((System.Drawing.Image)(resources.GetObject("editButton.Image")));
@@ -515,7 +532,7 @@
             this.createProjectButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.createProjectButton.FlatAppearance.BorderSize = 0;
             this.createProjectButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(116)))), ((int)(((byte)(150)))));
-            this.createProjectButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.createProjectButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.createProjectButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createProjectButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.createProjectButton.Image = ((System.Drawing.Image)(resources.GetObject("createProjectButton.Image")));
@@ -537,7 +554,7 @@
             this.reportsButtons.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.reportsButtons.FlatAppearance.BorderSize = 0;
             this.reportsButtons.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(116)))), ((int)(((byte)(150)))));
-            this.reportsButtons.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.reportsButtons.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.reportsButtons.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reportsButtons.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.reportsButtons.Image = ((System.Drawing.Image)(resources.GetObject("reportsButtons.Image")));
@@ -560,7 +577,7 @@
             this.projectsButton.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.projectsButton.FlatAppearance.BorderSize = 0;
             this.projectsButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(116)))), ((int)(((byte)(150)))));
-            this.projectsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(163)))), ((int)(((byte)(185)))));
+            this.projectsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(104)))), ((int)(((byte)(120)))));
             this.projectsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.projectsButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.projectsButton.Image = ((System.Drawing.Image)(resources.GetObject("projectsButton.Image")));
@@ -608,7 +625,6 @@
             this.createProjectPanel.Name = "createProjectPanel";
             this.createProjectPanel.Size = new System.Drawing.Size(840, 664);
             this.createProjectPanel.TabIndex = 5;
-            this.createProjectPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.createProjectPanel_Paint);
             // 
             // tableLayoutPanel1
             // 
@@ -837,7 +853,6 @@
             this.TOCLabel.TabIndex = 6;
             this.TOCLabel.Text = "TOC Date";
             this.TOCLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.TOCLabel.Click += new System.EventHandler(this.TOCLabel_Click);
             // 
             // textBox1
             // 
@@ -988,7 +1003,6 @@
             this.projectNameLabel.TabIndex = 0;
             this.projectNameLabel.Text = "Project Name";
             this.projectNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.projectNameLabel.Click += new System.EventHandler(this.projectNameLabel_Click);
             // 
             // foundationLabel
             // 
@@ -1157,7 +1171,6 @@
             this.label7.Size = new System.Drawing.Size(76, 15);
             this.label7.TabIndex = 45;
             this.label7.Text = "Project Costs";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -1229,15 +1242,97 @@
             // 
             // projectsData
             // 
-            this.projectsData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.projectsData.AllowUserToAddRows = false;
+            this.projectsData.AllowUserToDeleteRows = false;
+            this.projectsData.AutoGenerateColumns = false;
             this.projectsData.BackgroundColor = System.Drawing.Color.White;
             this.projectsData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.projectsData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.pnameDataGridViewTextBoxColumn,
+            this.segmentIDDataGridViewTextBoxColumn,
+            this.scopeDataGridViewTextBoxColumn,
+            this.wtgDataGridViewTextBoxColumn,
+            this.owneDataGridViewTextBoxColumn,
+            this.sapDataGridViewTextBoxColumn,
+            this.iDDataGridViewTextBoxColumn,
+            this.iDuserDataGridViewTextBoxColumn,
+            this.iDProjectTypeDataGridViewTextBoxColumn});
+            this.projectsData.DataSource = this.newprojectviewBindingSource;
             this.projectsData.Location = new System.Drawing.Point(6, 6);
             this.projectsData.Name = "projectsData";
             this.projectsData.Size = new System.Drawing.Size(825, 650);
             this.projectsData.TabIndex = 0;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // newprojectviewBindingSource
+            // 
+            this.newprojectviewBindingSource.DataMember = "new_project_view";
+            this.newprojectviewBindingSource.DataSource = this.dataSet1;
+            // 
+            // new_project_viewTableAdapter
+            // 
+            this.new_project_viewTableAdapter.ClearBeforeFill = true;
+            // 
+            // pnameDataGridViewTextBoxColumn
+            // 
+            this.pnameDataGridViewTextBoxColumn.DataPropertyName = "pname";
+            this.pnameDataGridViewTextBoxColumn.HeaderText = "pname";
+            this.pnameDataGridViewTextBoxColumn.Name = "pnameDataGridViewTextBoxColumn";
+            // 
+            // segmentIDDataGridViewTextBoxColumn
+            // 
+            this.segmentIDDataGridViewTextBoxColumn.DataPropertyName = "segmentID";
+            this.segmentIDDataGridViewTextBoxColumn.HeaderText = "segmentID";
+            this.segmentIDDataGridViewTextBoxColumn.Name = "segmentIDDataGridViewTextBoxColumn";
+            // 
+            // scopeDataGridViewTextBoxColumn
+            // 
+            this.scopeDataGridViewTextBoxColumn.DataPropertyName = "scope";
+            this.scopeDataGridViewTextBoxColumn.HeaderText = "scope";
+            this.scopeDataGridViewTextBoxColumn.Name = "scopeDataGridViewTextBoxColumn";
+            this.scopeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // wtgDataGridViewTextBoxColumn
+            // 
+            this.wtgDataGridViewTextBoxColumn.DataPropertyName = "wtg";
+            this.wtgDataGridViewTextBoxColumn.HeaderText = "wtg";
+            this.wtgDataGridViewTextBoxColumn.Name = "wtgDataGridViewTextBoxColumn";
+            this.wtgDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // owneDataGridViewTextBoxColumn
+            // 
+            this.owneDataGridViewTextBoxColumn.DataPropertyName = "owne";
+            this.owneDataGridViewTextBoxColumn.HeaderText = "owne";
+            this.owneDataGridViewTextBoxColumn.Name = "owneDataGridViewTextBoxColumn";
+            this.owneDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sapDataGridViewTextBoxColumn
+            // 
+            this.sapDataGridViewTextBoxColumn.DataPropertyName = "sap";
+            this.sapDataGridViewTextBoxColumn.HeaderText = "sap";
+            this.sapDataGridViewTextBoxColumn.Name = "sapDataGridViewTextBoxColumn";
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            // 
+            // iDuserDataGridViewTextBoxColumn
+            // 
+            this.iDuserDataGridViewTextBoxColumn.DataPropertyName = "IDuser";
+            this.iDuserDataGridViewTextBoxColumn.HeaderText = "IDuser";
+            this.iDuserDataGridViewTextBoxColumn.Name = "iDuserDataGridViewTextBoxColumn";
+            // 
+            // iDProjectTypeDataGridViewTextBoxColumn
+            // 
+            this.iDProjectTypeDataGridViewTextBoxColumn.DataPropertyName = "IDProjectType";
+            this.iDProjectTypeDataGridViewTextBoxColumn.HeaderText = "IDProjectType";
+            this.iDProjectTypeDataGridViewTextBoxColumn.Name = "iDProjectTypeDataGridViewTextBoxColumn";
             // 
             // executionForm
             // 
@@ -1251,6 +1346,7 @@
             this.Name = "executionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "executionForm";
+            this.Load += new System.EventHandler(this.executionForm_Load);
             this.locationPanel.ResumeLayout(false);
             this.locationPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.readPictureBox)).EndInit();
@@ -1266,6 +1362,8 @@
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectsData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newprojectviewBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1351,5 +1449,17 @@
         private System.Windows.Forms.PictureBox approvalPictureBox;
         private System.Windows.Forms.PictureBox writePictureBox;
         private System.Windows.Forms.PictureBox readPictureBox;
+        private DataSet1 dataSet1;
+        private System.Windows.Forms.BindingSource newprojectviewBindingSource;
+        private DataSet1TableAdapters.new_project_viewTableAdapter new_project_viewTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn segmentIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn scopeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn wtgDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn owneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sapDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDuserDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDProjectTypeDataGridViewTextBoxColumn;
     }
 }

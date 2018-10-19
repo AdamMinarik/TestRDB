@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,15 @@ namespace WindowsFormsApp1
             projectsPanel.Visible = true;
             portfolioPanel.Visible = false;
             createProjectPanel.Visible = false;
+        
+            DataGridViewButtonColumn uninstallButtonColumn = new DataGridViewButtonColumn();
+            uninstallButtonColumn.Name = "Open";
+            uninstallButtonColumn.Text = "Open";
+            uninstallButtonColumn.UseColumnTextForButtonValue = true;
+            if (projectsData.Columns["Open"] == null)
+            {
+                projectsData.Columns.Insert(0, uninstallButtonColumn);
+            }
         }
 
         private void reportsButtons_Click(object sender, EventArgs e)
@@ -30,9 +40,9 @@ namespace WindowsFormsApp1
             portfolioPanel.Visible = true;
         }
 
-        private void createProjectPanel_Paint(object sender, PaintEventArgs e)
+        private void quitButton_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void createProjectButton_Click(object sender, EventArgs e)
@@ -40,37 +50,6 @@ namespace WindowsFormsApp1
             portfolioPanel.Visible = true;
             createProjectPanel.Visible = true;
         }
-
-        private void projectNameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void TOCLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void quitButton_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void editButton_Click(object sender, EventArgs e)
         {
             if(this.nccButton.Visible == false)
@@ -115,42 +94,6 @@ namespace WindowsFormsApp1
             }
 
         }
-
-        private void transfSalesProjButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void projectOwnerButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void orgUnitButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nccButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ownerButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void usersButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void diCatButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void userLabel_Click(object sender, EventArgs e)
         {
             if (this.adminPictureBox.Visible == true) {
@@ -182,8 +125,65 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void guideButton_Click(object sender, EventArgs e)
         {
+            System.Diagnostics.Process.Start("http://www.google.com");
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void entryCurButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void diCatButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nccButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void projectOwnerButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void orgUnitButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wtgTypeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ownerButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usersButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void transfSalesProjButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void executionForm_Load(object sender, EventArgs e)
+        {
+            // TODO: Tento řádek načte data do tabulky 'dataSet1.new_project_view'. Můžete jej přesunout nebo jej odstranit podle potřeby.
+            this.new_project_viewTableAdapter.Fill(this.dataSet1.new_project_view);
 
         }
     }
