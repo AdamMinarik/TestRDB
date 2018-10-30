@@ -133,6 +133,25 @@ namespace WindowsFormsApp1
             this.projectOwnerComboBox = new System.Windows.Forms.ComboBox();
             this.rkUsersListviewBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tocTextBox = new System.Windows.Forms.DateTimePicker();
+<<<<<<< HEAD
+=======
+            this.tableauButton = new System.Windows.Forms.Button();
+            this.riskContingencyButton = new System.Windows.Forms.Button();
+            this.rologButton = new System.Windows.Forms.Button();
+            this.top20Button = new System.Windows.Forms.Button();
+            this.portfolioRepGridView = new System.Windows.Forms.DataGridView();
+            this.projectsData = new System.Windows.Forms.DataGridView();
+            this.pnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.segmentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scopeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wtgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.owneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDuserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDProjectTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.newprojectviewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+>>>>>>> master
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.new_project_viewTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.new_project_viewTableAdapter();
             this.rk_scopeTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.rk_scopeTableAdapter();
@@ -150,6 +169,7 @@ namespace WindowsFormsApp1
             this.projectDataTab = new System.Windows.Forms.TabPage();
             this.portfolioReportsTab = new System.Windows.Forms.TabPage();
             this.createProjectTab = new System.Windows.Forms.TabPage();
+<<<<<<< HEAD
             this.entryCurTab = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.entryCurrInsertButton = new System.Windows.Forms.Button();
@@ -169,6 +189,9 @@ namespace WindowsFormsApp1
             this.usersTab = new System.Windows.Forms.TabPage();
             this.transfSalesProjTab = new System.Windows.Forms.TabPage();
             this.rkCurrencyNameBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+=======
+            this.hidePanel = new System.Windows.Forms.Panel();
+>>>>>>> master
             this.locationPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.readPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.approvalPictureBox)).BeginInit();
@@ -190,6 +213,12 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.rkscopeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wTGtypeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rkUsersListviewBindingSource1)).BeginInit();
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.portfolioRepGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectsData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newprojectviewBindingSource)).BeginInit();
+>>>>>>> master
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rkusersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rkUsersListviewBindingSource)).BeginInit();
@@ -198,11 +227,14 @@ namespace WindowsFormsApp1
             this.projectDataTab.SuspendLayout();
             this.portfolioReportsTab.SuspendLayout();
             this.createProjectTab.SuspendLayout();
+<<<<<<< HEAD
             this.entryCurTab.SuspendLayout();
             this.panel1.SuspendLayout();
             this.entryCurList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.entryCurData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rkCurrencyNameBindingSource1)).BeginInit();
+=======
+>>>>>>> master
             this.SuspendLayout();
             // 
             // locationPanel
@@ -1482,6 +1514,8 @@ namespace WindowsFormsApp1
             this.projectOwnerComboBox.ValueMember = "ID";
             // 
             // rkUsersListviewBindingSource1
+<<<<<<< HEAD
+=======
             // 
             this.rkUsersListviewBindingSource1.DataMember = "rk_UsersList_view";
             this.rkUsersListviewBindingSource1.DataSource = this.dataSet1;
@@ -1493,6 +1527,151 @@ namespace WindowsFormsApp1
             this.tocTextBox.Name = "tocTextBox";
             this.tocTextBox.Size = new System.Drawing.Size(346, 20);
             this.tocTextBox.TabIndex = 28;
+            // 
+            // tableauButton
+            // 
+            this.tableauButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.tableauButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tableauButton.Location = new System.Drawing.Point(648, 650);
+            this.tableauButton.Name = "tableauButton";
+            this.tableauButton.Size = new System.Drawing.Size(183, 34);
+            this.tableauButton.TabIndex = 4;
+            this.tableauButton.Text = "Tableau Reports";
+            this.tableauButton.UseVisualStyleBackColor = true;
+            // 
+            // riskContingencyButton
+            // 
+            this.riskContingencyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.riskContingencyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.riskContingencyButton.Location = new System.Drawing.Point(436, 651);
+            this.riskContingencyButton.Name = "riskContingencyButton";
+            this.riskContingencyButton.Size = new System.Drawing.Size(183, 34);
+            this.riskContingencyButton.TabIndex = 3;
+            this.riskContingencyButton.Text = "Risk Contingency Report";
+            this.riskContingencyButton.UseVisualStyleBackColor = true;
+            // 
+            // rologButton
+            // 
+            this.rologButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.rologButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rologButton.Location = new System.Drawing.Point(220, 651);
+            this.rologButton.Name = "rologButton";
+            this.rologButton.Size = new System.Drawing.Size(183, 34);
+            this.rologButton.TabIndex = 2;
+            this.rologButton.Text = "Risk && Opportunity log Report";
+            this.rologButton.UseVisualStyleBackColor = true;
+            // 
+            // top20Button
+            // 
+            this.top20Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.top20Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.top20Button.Location = new System.Drawing.Point(6, 651);
+            this.top20Button.Name = "top20Button";
+            this.top20Button.Size = new System.Drawing.Size(183, 34);
+            this.top20Button.TabIndex = 1;
+            this.top20Button.Text = "Top 20 Report";
+            this.top20Button.UseVisualStyleBackColor = true;
+            // 
+            // portfolioRepGridView
+            // 
+            this.portfolioRepGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.portfolioRepGridView.BackgroundColor = System.Drawing.Color.White;
+            this.portfolioRepGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.portfolioRepGridView.Location = new System.Drawing.Point(6, 6);
+            this.portfolioRepGridView.Name = "portfolioRepGridView";
+            this.portfolioRepGridView.Size = new System.Drawing.Size(937, 638);
+            this.portfolioRepGridView.TabIndex = 0;
+            // 
+            // projectsData
+            // 
+            this.projectsData.AllowUserToAddRows = false;
+            this.projectsData.AllowUserToDeleteRows = false;
+            this.projectsData.AutoGenerateColumns = false;
+            this.projectsData.BackgroundColor = System.Drawing.Color.White;
+            this.projectsData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.projectsData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.pnameDataGridViewTextBoxColumn,
+            this.segmentIDDataGridViewTextBoxColumn,
+            this.scopeDataGridViewTextBoxColumn,
+            this.wtgDataGridViewTextBoxColumn,
+            this.owneDataGridViewTextBoxColumn,
+            this.sapDataGridViewTextBoxColumn,
+            this.iDDataGridViewTextBoxColumn,
+            this.iDuserDataGridViewTextBoxColumn,
+            this.iDProjectTypeDataGridViewTextBoxColumn});
+            this.projectsData.DataSource = this.newprojectviewBindingSource;
+            this.projectsData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.projectsData.Location = new System.Drawing.Point(0, 0);
+            this.projectsData.Name = "projectsData";
+            this.projectsData.Size = new System.Drawing.Size(952, 693);
+            this.projectsData.TabIndex = 0;
+            this.projectsData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.projectsData_CellClick);
+            // 
+            // pnameDataGridViewTextBoxColumn
+            // 
+            this.pnameDataGridViewTextBoxColumn.DataPropertyName = "pname";
+            this.pnameDataGridViewTextBoxColumn.HeaderText = "pname";
+            this.pnameDataGridViewTextBoxColumn.Name = "pnameDataGridViewTextBoxColumn";
+            // 
+            // segmentIDDataGridViewTextBoxColumn
+            // 
+            this.segmentIDDataGridViewTextBoxColumn.DataPropertyName = "segmentID";
+            this.segmentIDDataGridViewTextBoxColumn.HeaderText = "segmentID";
+            this.segmentIDDataGridViewTextBoxColumn.Name = "segmentIDDataGridViewTextBoxColumn";
+            // 
+            // scopeDataGridViewTextBoxColumn
+            // 
+            this.scopeDataGridViewTextBoxColumn.DataPropertyName = "scope";
+            this.scopeDataGridViewTextBoxColumn.HeaderText = "scope";
+            this.scopeDataGridViewTextBoxColumn.Name = "scopeDataGridViewTextBoxColumn";
+            this.scopeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // wtgDataGridViewTextBoxColumn
+            // 
+            this.wtgDataGridViewTextBoxColumn.DataPropertyName = "wtg";
+            this.wtgDataGridViewTextBoxColumn.HeaderText = "wtg";
+            this.wtgDataGridViewTextBoxColumn.Name = "wtgDataGridViewTextBoxColumn";
+            this.wtgDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // owneDataGridViewTextBoxColumn
+            // 
+            this.owneDataGridViewTextBoxColumn.DataPropertyName = "owne";
+            this.owneDataGridViewTextBoxColumn.HeaderText = "owne";
+            this.owneDataGridViewTextBoxColumn.Name = "owneDataGridViewTextBoxColumn";
+            this.owneDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sapDataGridViewTextBoxColumn
+            // 
+            this.sapDataGridViewTextBoxColumn.DataPropertyName = "sap";
+            this.sapDataGridViewTextBoxColumn.HeaderText = "sap";
+            this.sapDataGridViewTextBoxColumn.Name = "sapDataGridViewTextBoxColumn";
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            // 
+            // iDuserDataGridViewTextBoxColumn
+>>>>>>> master
+            // 
+            this.rkUsersListviewBindingSource1.DataMember = "rk_UsersList_view";
+            this.rkUsersListviewBindingSource1.DataSource = this.dataSet1;
+            // 
+            // tocTextBox
+            // 
+            this.tocTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tocTextBox.Location = new System.Drawing.Point(26, 318);
+            this.tocTextBox.Name = "tocTextBox";
+            this.tocTextBox.Size = new System.Drawing.Size(346, 20);
+            this.tocTextBox.TabIndex = 28;
+            // 
+            // dataSet1BindingSource
+            // 
+            this.dataSet1BindingSource.DataSource = this.dataSet1;
+            this.dataSet1BindingSource.Position = 0;
             // 
             // dataSet1BindingSource
             // 
@@ -1555,6 +1734,7 @@ namespace WindowsFormsApp1
             this.tabController.Controls.Add(this.projectDataTab);
             this.tabController.Controls.Add(this.portfolioReportsTab);
             this.tabController.Controls.Add(this.createProjectTab);
+<<<<<<< HEAD
             this.tabController.Controls.Add(this.entryCurTab);
             this.tabController.Controls.Add(this.diCatTab);
             this.tabController.Controls.Add(this.nccTab);
@@ -1564,6 +1744,8 @@ namespace WindowsFormsApp1
             this.tabController.Controls.Add(this.ownerTab);
             this.tabController.Controls.Add(this.usersTab);
             this.tabController.Controls.Add(this.transfSalesProjTab);
+=======
+>>>>>>> master
             this.tabController.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabController.Location = new System.Drawing.Point(275, 41);
             this.tabController.Name = "tabController";
@@ -1604,6 +1786,7 @@ namespace WindowsFormsApp1
             this.createProjectTab.Text = "Create Project";
             this.createProjectTab.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
             // entryCurTab
             // 
             this.entryCurTab.Controls.Add(this.panel1);
@@ -1788,12 +1971,26 @@ namespace WindowsFormsApp1
             // 
             this.rkCurrencyNameBindingSource1.DataMember = "rk_CurrencyName";
             this.rkCurrencyNameBindingSource1.DataSource = this.dataSet1;
+=======
+            // hidePanel
+            // 
+            this.hidePanel.BackColor = System.Drawing.Color.White;
+            this.hidePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.hidePanel.Location = new System.Drawing.Point(275, 41);
+            this.hidePanel.Name = "hidePanel";
+            this.hidePanel.Size = new System.Drawing.Size(966, 22);
+            this.hidePanel.TabIndex = 4;
+>>>>>>> master
             // 
             // executionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1241, 766);
+<<<<<<< HEAD
+=======
+            this.Controls.Add(this.hidePanel);
+>>>>>>> master
             this.Controls.Add(this.tabController);
             this.Controls.Add(this.buttonPanel);
             this.Controls.Add(this.locationPanel);
@@ -1826,6 +2023,12 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.rkscopeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wTGtypeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rkUsersListviewBindingSource1)).EndInit();
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.portfolioRepGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectsData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newprojectviewBindingSource)).EndInit();
+>>>>>>> master
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rkusersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rkUsersListviewBindingSource)).EndInit();
@@ -1834,12 +2037,15 @@ namespace WindowsFormsApp1
             this.projectDataTab.ResumeLayout(false);
             this.portfolioReportsTab.ResumeLayout(false);
             this.createProjectTab.ResumeLayout(false);
+<<<<<<< HEAD
             this.entryCurTab.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.entryCurList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.entryCurData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rkCurrencyNameBindingSource1)).EndInit();
+=======
+>>>>>>> master
             this.ResumeLayout(false);
 
         }
@@ -1965,6 +2171,7 @@ namespace WindowsFormsApp1
         private TabPage projectDataTab;
         private TabPage portfolioReportsTab;
         private TabPage createProjectTab;
+<<<<<<< HEAD
         private TabPage entryCurTab;
         private TabPage diCatTab;
         private TabPage nccTab;
@@ -1984,5 +2191,8 @@ namespace WindowsFormsApp1
         private TextBox countryEntryTextBox;
         private Label label2;
         private Label label1;
+=======
+        private Panel hidePanel;
+>>>>>>> master
     }
 }

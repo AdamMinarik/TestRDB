@@ -43,6 +43,8 @@ namespace WindowsFormsApp1
 
         public object ProjectsData { get; private set; }
 
+        public object ProjectsData { get; private set; }
+
         public executionForm()
         {
             InitializeComponent();
@@ -58,6 +60,7 @@ namespace WindowsFormsApp1
             uninstallButtonColumn.Name = "Open";
             uninstallButtonColumn.Text = "Open";
             uninstallButtonColumn.UseColumnTextForButtonValue = true;
+            
 
 
             if (projectsData.Columns["Open"] == null)
@@ -428,6 +431,7 @@ namespace WindowsFormsApp1
         {
 
         }
+<<<<<<< HEAD
 
         private void entryCurrUpdateBtn_Click(object sender, EventArgs e)
         {
@@ -497,6 +501,8 @@ namespace WindowsFormsApp1
 
 
         }
+=======
+>>>>>>> master
     }
 }
 
