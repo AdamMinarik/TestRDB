@@ -60,6 +60,12 @@
     <Compile Include="executionForm.Designer.cs">
       <DependentUpon>executionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExecRolog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExecRolog.Designer.cs">
+      <DependentUpon>ExecRolog.cs</DependentUpon>
+    </Compile>
     <Compile Include="InitialForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ExecRolog.resx">
+      <DependentUpon>ExecRolog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="executionForm.resx">
       <DependentUpon>executionForm.cs</DependentUpon>
     </EmbeddedResource>

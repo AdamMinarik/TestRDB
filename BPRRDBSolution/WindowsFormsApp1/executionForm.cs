@@ -35,6 +35,8 @@ namespace WindowsFormsApp1
         private String ruCurrency;
         private String ruRate;
 
+        public object ProjectsData { get; private set; }
+
         public executionForm()
         {
             InitializeComponent();
@@ -42,6 +44,7 @@ namespace WindowsFormsApp1
             uninstallButtonColumn.Name = "Open";
             uninstallButtonColumn.Text = "Open";
             uninstallButtonColumn.UseColumnTextForButtonValue = true;
+            
 
             if (projectsData.Columns["Open"] == null)
             {
@@ -55,6 +58,7 @@ namespace WindowsFormsApp1
             projectsPanel.Visible = true;
             portfolioPanel.Visible = false;
             createProjectPanel.Visible = false;
+            tabController.SelectedIndex = 0;
 
             uninstallButtonColumn.Name = "Open";
             uninstallButtonColumn.Text = "Open";
@@ -70,6 +74,7 @@ namespace WindowsFormsApp1
         {
             createProjectPanel.Visible = false;
             portfolioPanel.Visible = true;
+            tabController.SelectedIndex = 1;
         }
 
         private void quitButton_Click(object sender, EventArgs e)
@@ -93,7 +98,8 @@ namespace WindowsFormsApp1
 
             portfolioPanel.Visible = true;
             createProjectPanel.Visible = true;
-            
+            tabController.SelectedIndex = 2;
+
         }
         private void editButton_Click(object sender, EventArgs e)
         {
@@ -327,7 +333,8 @@ namespace WindowsFormsApp1
             else
             {
                 projectID = projectIDTextBox.Text;
-                loaID = LoaIDTextBox.Text;
+                if (LoaIDTextBox.Text == "") loaID = "99";
+                else loaID = LoaIDTextBox.Text;
                 projectManager = PMTextBox.Text;
                 commercialPM = CPMTextBox.Text;
                 scope = scopeComboBox.SelectedValue.ToString();
@@ -367,6 +374,27 @@ namespace WindowsFormsApp1
         }
 
         private void foundationComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void projectsData_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string projectName = "";
+
+            // Ignore clicks that are not in our 
+            if (e.ColumnIndex == projectsData.Columns["Open"].Index && e.RowIndex >= 0)
+            {
+                ExecRolog execROlogForm = new ExecRolog();
+                execROlogForm.Show();
+
+                projectName = projectsData.Rows[e.RowIndex].Cells[1].Value.ToString();
+                execROlogForm.setLocationLabel(projectName.ToUpper());
+            }
+        }
+
+        private void buEurLabel_Click(object sender, EventArgs e)
         {
 
         }
