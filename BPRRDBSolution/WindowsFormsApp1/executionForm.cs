@@ -14,6 +14,7 @@ namespace WindowsFormsApp1
     public partial class executionForm : Form
     {
         private DataGridViewButtonColumn uninstallButtonColumn;
+
         private String projectName;
         private String projectOwnerID;
         private String projectID;
@@ -34,14 +35,30 @@ namespace WindowsFormsApp1
         private String ruCosts;
         private String ruCurrency;
         private String ruRate;
+        private SqlConnectionStringBuilder connectionString;
+
+        SqlDataAdapter daEntryCurr;
+        DataTable dsEntryCurr;
+
+
+        public object ProjectsData { get; private set; }
 
         public executionForm()
         {
             InitializeComponent();
+
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = "riskdbsserver.database.windows.net";
+            builder.UserID = "superuser@riskdbsserver";
+            builder.Password = "Greenpear@1";
+            builder.InitialCatalog = "[EW_Risk_Test]";
+            connectionString = builder;
+
             uninstallButtonColumn = new DataGridViewButtonColumn();
             uninstallButtonColumn.Name = "Open";
             uninstallButtonColumn.Text = "Open";
             uninstallButtonColumn.UseColumnTextForButtonValue = true;
+
 
             if (projectsData.Columns["Open"] == null)
             {
@@ -55,6 +72,7 @@ namespace WindowsFormsApp1
             projectsPanel.Visible = true;
             portfolioPanel.Visible = false;
             createProjectPanel.Visible = false;
+            tabController.SelectedIndex = 0;
 
             uninstallButtonColumn.Name = "Open";
             uninstallButtonColumn.Text = "Open";
@@ -70,6 +88,7 @@ namespace WindowsFormsApp1
         {
             createProjectPanel.Visible = false;
             portfolioPanel.Visible = true;
+            tabController.SelectedIndex = 1;
         }
 
         private void quitButton_Click(object sender, EventArgs e)
@@ -93,11 +112,12 @@ namespace WindowsFormsApp1
 
             portfolioPanel.Visible = true;
             createProjectPanel.Visible = true;
-            
+            tabController.SelectedIndex = 2;
+
         }
         private void editButton_Click(object sender, EventArgs e)
         {
-            if(this.nccButton.Visible == false)
+            if (this.nccButton.Visible == false)
             {
                 this.entryCurButton.Visible = true;
                 //System.Threading.Thread.Sleep(20);
@@ -141,13 +161,14 @@ namespace WindowsFormsApp1
         }
         private void userLabel_Click(object sender, EventArgs e)
         {
-            if (this.adminPictureBox.Visible == true) {
+            if (this.adminPictureBox.Visible == true)
+            {
                 readPictureBox.Visible = true;
                 adminPictureBox.Visible = false;
                 writePictureBox.Visible = false;
                 approvalPictureBox.Visible = false;
             }
-            else if(this.readPictureBox.Visible == true)
+            else if (this.readPictureBox.Visible == true)
             {
                 readPictureBox.Visible = false;
                 writePictureBox.Visible = true;
@@ -183,46 +204,60 @@ namespace WindowsFormsApp1
         private void entryCurButton_Click(object sender, EventArgs e)
         {
 
+            SqlConnection connection = new SqlConnection(connectionString.ConnectionString);
+            connection.Open();
+            string SQL = "SELECT * FROM rk_CurrencyName ORDER BY Country";
+
+            daEntryCurr = new SqlDataAdapter(SQL, connection);
+            dsEntryCurr = new DataTable();
+            daEntryCurr.Fill(dsEntryCurr);
+            entryCurData.DataSource = dsEntryCurr;
+            connection.Close();
+
+            tabController.SelectedIndex = 3;
         }
+
+
+
 
         private void diCatButton_Click(object sender, EventArgs e)
         {
-
+            tabController.SelectedIndex = 4;
         }
 
         private void nccButton_Click(object sender, EventArgs e)
         {
-
+            tabController.SelectedIndex = 5;
         }
 
         private void projectOwnerButton_Click(object sender, EventArgs e)
         {
-
+            tabController.SelectedIndex = 6;
         }
 
         private void orgUnitButton_Click(object sender, EventArgs e)
         {
-
+            tabController.SelectedIndex = 7;
         }
 
         private void wtgTypeButton_Click(object sender, EventArgs e)
         {
-
+            tabController.SelectedIndex = 8;
         }
 
         private void ownerButton_Click(object sender, EventArgs e)
         {
-
+            tabController.SelectedIndex = 9;
         }
 
         private void usersButton_Click(object sender, EventArgs e)
         {
-
+            tabController.SelectedIndex = 10;
         }
 
         private void transfSalesProjButton_Click(object sender, EventArgs e)
         {
-
+            tabController.SelectedIndex = 11;
         }
 
         private void executionForm_Load(object sender, EventArgs e)
@@ -253,11 +288,12 @@ namespace WindowsFormsApp1
             String missingCompulsory = "Missing values:\n\n";
             DateTime oDate;
             bool isMissing = false;
-            
-            if(projectNameTextBox.Text == ""){
+
+            if (projectNameTextBox.Text == "")
+            {
                 missingCompulsory = missingCompulsory + "Project Name\n";
                 isMissing = true;
-            }  
+            }
             else projectName = projectNameTextBox.Text;
 
             if (projectOwnerComboBox.SelectedValue == null)
@@ -327,7 +363,8 @@ namespace WindowsFormsApp1
             else
             {
                 projectID = projectIDTextBox.Text;
-                loaID = LoaIDTextBox.Text;
+                if (LoaIDTextBox.Text == "") loaID = "99";
+                else loaID = LoaIDTextBox.Text;
                 projectManager = PMTextBox.Text;
                 commercialPM = CPMTextBox.Text;
                 scope = scopeComboBox.SelectedValue.ToString();
@@ -363,12 +400,103 @@ namespace WindowsFormsApp1
             }
 
 
-            
+
         }
 
         private void foundationComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
+
+
+        private void projectsData_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string projectName = "";
+
+            // Ignore clicks that are not in our 
+            if (e.ColumnIndex == projectsData.Columns["Open"].Index && e.RowIndex >= 0)
+            {
+                ExecRolog execROlogForm = new ExecRolog();
+                execROlogForm.Show();
+
+                projectName = projectsData.Rows[e.RowIndex].Cells[1].Value.ToString();
+                execROlogForm.setLocationLabel(projectName.ToUpper());
+            }
+        }
+
+        private void buEurLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void entryCurrUpdateBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable changes = ((DataTable)entryCurData.DataSource).GetChanges();
+                if (changes != null)
+                {
+                    daEntryCurr = new SqlDataAdapter("SELECT * FROM rk_CurrencyName ORDER BY Country", connectionString.ConnectionString);
+                    SqlCommandBuilder mcb = new SqlCommandBuilder(daEntryCurr);
+                    daEntryCurr.UpdateCommand = mcb.GetUpdateCommand();
+                    daEntryCurr.Update(changes);
+                    ((DataTable)entryCurData.DataSource).AcceptChanges();
+                    MessageBox.Show("List Updated");
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void entryCurrInsertButton_Click(object sender, EventArgs e)
+        {
+            bool continueBool = true;
+
+            try
+            {
+                if (this.codeEntryTextBox.Text.Length > 3)
+                {
+                    MessageBox.Show("Entry Currency Code cannot have more then 3 characters", "Data saved", MessageBoxButtons.OK);
+                    continueBool = false;
+                }
+                if (this.codeEntryTextBox.Text.Length == 0 || this.countryEntryTextBox.Text.Length == 0)
+                {
+                    MessageBox.Show("Please fill Country and Code Fields", "Data saved", MessageBoxButtons.OK);
+                    continueBool = false;
+                }
+
+                if(continueBool == true) { 
+                string query = "INSERT INTO rk_CurrencyName(Country,Code) VALUES ('" + this.countryEntryTextBox.Text + "','" + this.codeEntryTextBox.Text + "')";
+
+                        using (SqlConnection connection = new SqlConnection(connectionString.ConnectionString))
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            connection.Open();
+                            Console.WriteLine(query);
+                            command.ExecuteNonQuery();
+                            string SQL = "SELECT * FROM rk_CurrencyName ORDER BY Country";
+                            daEntryCurr = new SqlDataAdapter(SQL, connection);
+                            dsEntryCurr = new DataTable();
+                            daEntryCurr.Fill(dsEntryCurr);
+                            entryCurData.DataSource = dsEntryCurr;
+                            connection.Close();
+                        }
+                        this.countryEntryTextBox.Text = "";
+                        this.codeEntryTextBox.Text = "";
+                        MessageBox.Show("Entry Currency Saved", "Data saved", MessageBoxButtons.OK);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+        }
     }
 }
+
